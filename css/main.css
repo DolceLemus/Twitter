@@ -1,0 +1,98 @@
+body {
+    box-sizing: border-box;
+    display: block;
+    background: #00C2E0;
+    margin: 0;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-size: 17px;
+    background: url(./../assets/images/w6.jpg);
+}
+
+/* FUENTEhttps://stackoverflow.com/questions/20300138/is-it-possible-to-add-placeholder-in-div-tag */
+/* [contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text);
+} */
+/* FUENTEhttps://stackoverflow.com/questions/20300138/is-it-possible-to-add-placeholder-in-div-tag */
+
+
+/* secciones generales de la pagina web */
+
+header {
+    width: 100%;
+    background-color: rgb(0, 147, 180, 0.8);
+    height: 5em;
+    /* opacity: .8; */
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.twitterHalf {
+    background: url(./../assets/images/twitter.png);
+    background-size: cover;
+    height: 5em;
+    width: 20em;
+    margin-left: 35%;
+}
+
+/* diseño de los objetos del main */
+
+.spaceLeft, .spaceRight {
+    width: 30em;
+    margin-left: 1em;
+    margin-top: 1em;
+    height: 18em;
+    background-color: rgb(195, 217, 221, 0.9);
+    display: inline-block;
+    border-radius: 5px;
+    float: left;
+}
+
+.spaceLeft {
+    margin-left: 10%;
+}
+
+/* diseño de los objetos de los cuadros */
+
+#form {
+    width: 28em;
+    min-height: 10em;
+    max-height: 40em;
+    margin-left: 1em;
+    margin-top: 1em;
+    background-color: rgb(238, 229, 232);
+    cursor: pointer;
+    color: gray;
+    border: none;
+    font-size: 17px;
+}
+
+#buttonTweet {
+    border-radius: 3px;
+    height: 2em;
+    width: 7em;
+    background-color:rgb(163, 163, 163);
+    text-align: center;
+    margin-left: 1em;
+    cursor: pointer;
+    padding-top: .01em;
+    padding-bottom: 1em;
+}
+
+.btnTweet{
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.containerTweet{
+    width: 40em;
+    height: 7em;
+    background-color: rgb(195, 217, 221, 0.9);
+    float: left;
+    margin-top: 2em;
+    margin-left: 20%;
+    border: 5px groove rgb(117, 162, 172);
+}
