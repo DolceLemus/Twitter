@@ -59,10 +59,18 @@ header {
 
 /* diseño de los objetos de los cuadros */
 
-#form {
+#form{
+    width: 100%;
+    height: auto;
+    display: block;
+    font-smoothing: subpixel-antialiased;
+}
+
+#containerTextarea {
     width: 28em;
+    height: auto;
     min-height: 10em;
-    max-height: 40em;
+    max-height: 80em;
     margin-left: 1em;
     margin-top: 1em;
     background-color: rgb(238, 229, 232);
@@ -70,6 +78,7 @@ header {
     color: gray;
     border: none;
     font-size: 17px;
+    height: auto;
 }
 
 #buttonTweet {
@@ -103,6 +112,6 @@ header {
 #numCont{
     display: inline-block;
     border: none;
-    margin-left: 100%;
+    margin-left: 90%;
     width: 3em;
 }

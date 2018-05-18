@@ -25,9 +25,11 @@
             <a href="#">CODIGO</a>
         </div>
         <div class="spaceRight">
-            <textarea onKeyDown="contar()" onKeyUp="contar()" onkeyup="validar()" id="form" rows="10" placeholder="¿Que estas pensando?" ></textarea>
+            <div id="containerTextarea">
+                <textarea onKeyDown="contar()" wrap="hard" onkeyup="validar()" , "contar()" id="form" rows="10" placeholder="¿Que estas pensando?"></textarea>
+            </div>
             <br>
-            <button type="submit" value="Submit" disabled   id="buttonTweet"> TWEET </button>
+            <button type="submit" value="Submit" disabled id="buttonTweet"> TWEET </button>
 
             <div id="containerCont">
                 <input disabled placeholder="140" id="numCont"></input>
