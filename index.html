@@ -18,15 +18,19 @@
     </header>
 
     <main id='container'>
-        <div class="spaceLeft"></div>
+        <div class="spaceLeft">
+            <h2>Reto de codigo</h2>
+            <p>Hola, </p>
+            <p>soy Front-End developer jr. </p>
+            <a href="#">CODIGO</a>
+        </div>
         <div class="spaceRight">
-            <textarea id="form" rows="10" placeholder="¿Que estas pensando?" ></textarea>
+            <textarea onKeyDown="contar()" onKeyUp="contar()" onkeyup="validar()" id="form" rows="10" placeholder="¿Que estas pensando?" ></textarea>
             <br>
-            <div id="buttonTweet">
-                <p class="btnTweet">TWEET</p>
-            </div>
-            <div class="containerCont">
-                <p class="numCont"></p>
+            <button type="submit" value="Submit" disabled   id="buttonTweet"> TWEET </button>
+
+            <div id="containerCont">
+                <input disabled placeholder="140" id="numCont"></input>
             </div>
         </div>
     </main>

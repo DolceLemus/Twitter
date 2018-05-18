@@ -6,6 +6,7 @@ body {
     font-family: "Segoe UI",Arial,sans-serif;
     font-size: 17px;
     background: url(./../assets/images/w6.jpg);
+    background-size:
 }
 
 /* FUENTEhttps://stackoverflow.com/questions/20300138/is-it-possible-to-add-placeholder-in-div-tag */
@@ -52,6 +53,7 @@ header {
 }
 
 .spaceLeft {
+    text-align: center;
     margin-left: 10%;
 }
 
@@ -72,19 +74,15 @@ header {
 
 #buttonTweet {
     border-radius: 3px;
-    height: 2em;
+    height: 4em;
     width: 7em;
     background-color:rgb(163, 163, 163);
     text-align: center;
-    margin-left: 1em;
+    margin-left: 1.3em;
     cursor: pointer;
     padding-top: .01em;
-    padding-bottom: 1em;
-}
-
-.btnTweet{
-    margin-top: 1em;
     font-weight: bold;
+    border:none;
 }
 
 .containerTweet{
@@ -95,4 +93,16 @@ header {
     margin-top: 2em;
     margin-left: 20%;
     border: 5px groove rgb(117, 162, 172);
+}
+
+#containerCont{
+    width: 50%;
+    display: inline-block;
+}
+
+#numCont{
+    display: inline-block;
+    border: none;
+    margin-left: 100%;
+    width: 3em;
 }

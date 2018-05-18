@@ -147,6 +147,39 @@
 // VERSIÓN 0.0.1
 var buttonTweet = document.getElementById('buttonTweet');
 
+var valButtonTweet = document.getElementById('form');
+var textButtonTweet = document.createTextNode(valButtonTweet);
+
+function validar() {
+    var validado = true;
+    elementos = document.getElementsByClassName("form");
+    for (i = 0; i < elementos.length; i++) {
+        if (elementos[i].value == "" || elementos[i].value == null) {
+            validado = false
+        }
+    }
+    if (validado) {
+        document.getElementById("buttonTweet").disabled = false;
+
+    } else {
+        document.getElementById("buttonTweet").disabled = true;
+        //Salta un alert cada vez que escribes y hay un campo vacio
+        //alert("Hay campos vacios")
+    }
+}
+
+function contar() {
+    var max = "140";
+    var strLong = document.getElementById("form").value;
+    var longitud = strLong.length;
+
+    if (longitud <= max) {
+        document.getElementById("numCont").value = max - longitud;
+    } else {
+        document.getElementById("form").value = strLong.substr(0, max);
+    }
+}
+
 buttonTweet.addEventListener('click', function() {
     // creando objetos
     var container = document.getElementById('container');
@@ -162,5 +195,6 @@ buttonTweet.addEventListener('click', function() {
 
     // estilos
     containerTweet.classList.add('containerTweet');
-    
+    // document.getElementById('buttonTweet').value = '';
+
 });
